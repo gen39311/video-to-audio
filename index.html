@@ -33,61 +33,25 @@
         .header h1 { font-size: 22px; font-weight: 600; margin-bottom: 6px; }
         .header p { font-size: 14px; opacity: 0.85; }
         .app-wrapper { padding: 0; min-height: 500px; }
-        #app {
-            width: 100%;
-            min-height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 14px;
-        }
-        #app iframe {
-            border: none !important;
-            width: 100% !important;
-            min-height: 500px !important;
-        }
-        .footer {
-            padding: 16px 24px;
-            text-align: center;
-            font-size: 12px;
-            color: #999;
-            border-top: 1px solid #f0f0f0;
-        }
-        @media (max-width: 480px) {
-            body { padding: 0; }
-            .container { border-radius: 0; max-width: 100%; }
-            .header { padding: 20px 16px; }
-        }
+        #app { width: 100%; min-height: 500px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 14px; }
+        #app iframe { border: none !important; width: 100% !important; min-height: 500px !important; }
+        .footer { padding: 16px 24px; text-align: center; font-size: 12px; color: #999; border-top: 1px solid #f0f0f0; }
+        @media (max-width: 480px) { body { padding: 0; } .container { border-radius: 0; max-width: 100%; } .header { padding: 20px 16px; } }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>🎬 视频转音频工具</h1>
-            <p>上传视频，一键提取音频文件</p>
-        </div>
-        <div class="app-wrapper">
-            <div id="app">
-                正在加载应用，请稍候...
-            </div>
-        </div>
-        <div class="footer">
-            由扣子（Coze）提供技术支持
-        </div>
+        <div class="header"><h1>🎬 视频转音频工具</h1><p>上传视频，一键提取音频文件</p></div>
+        <div class="app-wrapper"><div id="app">正在加载应用，请稍候...</div></div>
+        <div class="footer">由扣子（Coze）提供技术支持</div>
     </div>
-
     <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/builder-web-sdk/0.1.1-beta.1/dist/umd/index.js"></script>
     <script>
         new CozeWebSDK.AppWebSDK({
-            token: "cztei_hESNZQNDttqE05rqr7aob2HKBBw6tjjGtayU4ci7rssdGd80vTLzmy1avwXHxDTnE",
+            token: "cztei_hlaGO54wvEu0zIBSEjVevm0J55Cf75pe08gZQJ9mtkZemcgh1x2MBOrjNci4PGHmf",
             appId: "7655233767867105307",
             container: "#app",
-            userInfo: {
-                id: "guest_user",
-                url: "",
-                nickname: "用户"
-            }
+            userInfo: { id: "guest_user", url: "", nickname: "用户" }
         });
     </script>
 </body>
